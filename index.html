@@ -3,27 +3,133 @@
 <head>
 
 <style>
-  body{
+  body {
     background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
   }
-  div {
-  padding: 100px;
-  text-align: left;
-    }
+  
+  h1 {
+    color: pink;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  h2 {
+    color: pink;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  p {
+    color: pink;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  a {
+    color: lightblue;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .content {
+    padding: 50px;
+    max-width: 700px;
+    margin-left: 20%;
+    position: relative;
+  }
+
+  .icon-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .icon-container img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    vertical-align: middle;
+  }
+
+  .Profile {
+    width: 380px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+  }
+
+  hr {
+    border: 1px solid pink;
+    margin: 20px 10%;
+  }
+
+  .vertical-line {
+    position: fixed;
+    left: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 80%;
+    background-color: white;
+  }
+
+  .left-side-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: right;
+    width: 8%;
+  }
+
 </style>
 </head>
 <body>
-<center>
-<h1 style= "color: pink;">WELCOME!</h1>
-</center>
-<hr>
-<h2 style= "color: pink;"> Hi, I'm Lawrenz Josh A. Mamparo <br>  Bachelor of Science in Information Technology<br>
-<p style= "color: pink;"> I'm From the Province of Davao Oriental. In our first year, We created <br>
-a booking system for the laboratories and we proposed an healthcare <br> app that is aligned in pharmacy field.
-<h3>HTML activity</h3>
-<a href="Html/fashionblog/index.html">LINK TO FASHION  BLOG</a>
 
-</div>
+  <h1>WELCOME!</h1>
+  <hr>
+
+  <div class="left-side-text">
+    <h3 style="color: pink;">HTML ACTIVITY:</h3>
+    <a href="Html/fashionblog/index.html">LINK TO FASHION BLOG</a>
+    <h3 </h3>
+    <div class="icon-container">
+      <h3 style="color: pink;">CONTACTS:</h3>
+      <a href="https://www.facebook.com/profile.php?id=100010046026463" target="_blank">
+        <img src="https://github.com/Joshloll/Joshloll.github.io/blob/main/Html/fashionblog/facebook.png?raw=true" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/lawre_nx/" target="_blank">
+        <img src="https://github.com/Joshloll/Joshloll.github.io/blob/main/Html/fashionblog/instagram.png?raw=true" alt="Instagram">
+      </a>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>Hi, I'm Lawrenz Josh A. Mamparo<br>
+    Bachelor of Science in Information Technology<br>
+    student of the University of the Immaculate Conception.</h2>
+
+    <p>I'm from the Province of Davao Oriental. In our first year, we created<br>
+    a booking system for the laboratories and proposed a healthcare<br>
+    app aligned with the pharmacy field.</p>
+  </div>
+
+  <img class="Profile" src="https://github.com/Joshloll/Joshloll.github.io/blob/main/Html/fashionblog/Clipped_image_20240825_222604.png?raw=true" alt="My profile">
+
+  <div class="vertical-line"></div>
+
 </body>
 </html>
-
