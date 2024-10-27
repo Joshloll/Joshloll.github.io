@@ -14,6 +14,7 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            overflow: hidden;
         }
 
         /* Card design */
@@ -99,17 +100,88 @@
             background-color: #aaa;
             transform: translate(calc(20px - 40px * (Math.random() * 2)), calc(20px - 40px * (Math.random() * 2)));
         }
+
+        /* Overlay styling */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease, visibility 0.3s;
+        }
+
+        /* Overlay visible */
+        .overlay.visible {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Overlay card */
+        .overlay-card {
+            background-color: #fff;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .overlay-card p {
+            font-size: 20px;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .overlay-card button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #ff6b81;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .overlay-card button:hover {
+            background-color: #ff4a61;
+        }
     </style>
 </head>
 <body>
     <div class="card">
         <div class="heart">❤️</div>
-        <h2>Hi [Crush's Name] 😊</h2>
-        <p>Would you like to join me for a snack date? 🍕🥤</p>
+        <h2>Hi SN. Eba Jena❤️  </h2>
+        <p>Would you like to join me for a snack date,on October 30,3:30pm</p>
         <div class="buttons">
-            <button class="yes" onclick="alert('Yay! Can’t wait! 😊')">Yes, I’d love to!</button>
-            <button class="no">No, maybe next time</button>
+            <button class="yes" onclick="showOverlay()">Yes, I’d love to!</button>
+            <button class="no">No</button>
         </div>
     </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay">
+        <div class="overlay-card">
+            <p>Yay! Looking forward to it! 😊</p>
+            <button onclick="hideOverlay()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function showOverlay() {
+            document.getElementById('overlay').classList.add('visible');
+        }
+
+        function hideOverlay() {
+            document.getElementById('overlay').classList.remove('visible');
+        }
+    </script>
 </body>
 </html>
