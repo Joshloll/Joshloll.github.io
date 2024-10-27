@@ -4,15 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snack Date Invitation</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Background with a gradient */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        }
+
+        /* Card design */
+        .card {
+            text-align: center;
+            padding: 30px;
+            width: 320px;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Heart animation */
+        .heart {
+            font-size: 40px;
+            animation: heartbeat 1s infinite;
+            color: #ff6b81;
+            margin-bottom: 10px;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        /* Header and text */
+        .card h2 {
+            font-size: 26px;
+            margin: 0 0 15px;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 18px;
+            color: #555;
+            margin: 0 0 25px;
+        }
+
+        /* Buttons styling */
+        .buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        /* Yes button */
+        button.yes {
+            background-color: #ff6b81;
+        }
+
+        button.yes:hover {
+            background-color: #ff4a61;
+            transform: translateY(-3px);
+        }
+
+        /* No button with moving effect */
+        button.no {
+            background-color: #ccc;
+            position: relative;
+        }
+
+        button.no:hover {
+            background-color: #aaa;
+            transform: translate(calc(20px - 40px * (Math.random() * 2)), calc(20px - 40px * (Math.random() * 2)));
+        }
+    </style>
 </head>
 <body>
     <div class="card">
         <div class="heart">❤️</div>
-        <h2>Hi SN. Bea Jane 😊</h2>
-        <p>Would you like to join me for a snack date?❤️️ </p>
+        <h2>Hi [Crush's Name] 😊</h2>
+        <p>Would you like to join me for a snack date? 🍕🥤</p>
         <div class="buttons">
-            <button class="yes" onclick="alert('Thank you(make a screenshot and send it to me.) 😊')">Yes, I’d love to!</button>
+            <button class="yes" onclick="alert('Yay! Can’t wait! 😊')">Yes, I’d love to!</button>
             <button class="no">No, maybe next time</button>
         </div>
     </div>
