@@ -6,7 +6,7 @@ async function getRandomMeal() {
     const data = await response.json();
     const meal = data.meals[0];
 
-    // Display meal details
+   
     document.getElementById('mealName').innerText = meal.strMeal;
     document.getElementById('mealCategory').innerText = meal.strCategory;
     document.getElementById('mealInstructions').innerText = meal.strInstructions;
@@ -16,5 +16,5 @@ async function getRandomMeal() {
   }
 }
 
-// Call the function to fetch and display meal data when the page loads
+
 window.onload = getRandomMeal;

@@ -6,14 +6,14 @@
 }
 
 body {
-    background-color: #f4f4f4; /* Subtle background color */
+    background-color: #f4f4f4; 
     color: #333;
     line-height: 1.6;
 }
 
 .hero {
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -249,7 +249,7 @@ audio, video {
     margin-bottom: 20px;
 }
 
-/* Style for the API text link */
+
 .api-link {
     display: block;
     margin-top: 10px;
@@ -264,7 +264,7 @@ audio, video {
     color: #333;
 }
 
-/* Media Queries */
+
 @media only screen and (max-width: 768px) {
     .hero {
         flex-direction: column;
