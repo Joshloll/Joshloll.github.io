@@ -90,7 +90,7 @@ nav ul li a:hover {
     text-align: left;
     padding: 20px;
     color: #212121;
-    width: 60%; /* The Intro still takes up 60% of the hero section */
+    width: 60%; 
     position: relative;
     z-index: 1;
 }
@@ -115,6 +115,7 @@ nav ul li a:hover {
     margin: 0 auto;
     padding-top: 10px;
 }
+
 #contacts {
     text-align: center;
     margin-top: 50px;
@@ -144,15 +145,15 @@ nav ul li a:hover {
 }
 
 .social-icon {
-    width: 100px; /* Set the size of the icons */
+    width: 100px; 
     height: 100px;
     object-fit: cover;
-    border-radius: 10px; /* Optional: adds rounded corners */
+    border-radius: 10px; 
     transition: transform 0.3s ease;
 }
 
 .social-icon:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
+    transform: scale(1.1); 
 }
 
 #my-html {
@@ -162,7 +163,7 @@ nav ul li a:hover {
 }
 
 #my-html h2 {
-    font-size: 2.5em; /* Increased heading size */
+    font-size: 2.5em;
     color: #333;
 }
 
@@ -175,7 +176,7 @@ nav ul li a:hover {
 .my-html-images {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Increased gap for better spacing between larger images */
+    gap: 40px; 
     margin-top: 30px;
 }
 
@@ -184,14 +185,208 @@ nav ul li a:hover {
 }
 
 .my-html-image {
-    width: 250px; /* Increased size of the images */
+    width: 250px; 
     height: 250px;
     object-fit: cover;
-    border-radius: 10px; /* Optional: adds rounded corners */
+    border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
 .my-html-image:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.1); 
 }
 
+#about {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.left-side {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-side h3 {
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.right-side {
+    flex: 2;
+    padding: 20px;
+}
+
+.right-side p {
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.about-image:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+
+audio, video {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Style for the API text link */
+.api-link {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #e91e63;
+    font-weight: bold;
+    text-align: center;
+}
+
+.api-link:hover {
+    color: #333;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .Intro {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .Intro h1 {
+        font-size: 36px;
+    }
+
+    .Intro p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .pics {
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .pics img.mybackground {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    nav {
+        position: static;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    nav img {
+        width: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .my-html-images {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .my-html-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .about-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icon {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+    
+@media only screen and (max-width: 480px) {
+    .Intro h1 {
+        font-size: 28px;
+    }
+
+    .Intro p {
+        font-size: 14px;
+    }
+
+    .my-html-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .about-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .social-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .hero {
+        padding: 10px;
+    }
+
+    nav ul {
+        font-size: 12px;
+    }
+}
